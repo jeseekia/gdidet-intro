@@ -1,0 +1,69 @@
+/* CSS Reset */
+
+html, body, div, span, a, em, img, strong, header, nav, section, aside, footer { 
+	background: transparent; 
+	border: 0; 
+	margin: 0; 
+	padding: 0; 
+}
+
+body {
+	margin: 0 auto;
+	width: 80%;
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	background-color: #FBEFF4;
+}
+
+header {
+	height: 150px;
+	text-align: center;
+}
+
+main {
+	padding: 2%;
+	border: 5px solid #6D0839;
+	margin: 2%;
+	width: 53%;
+	float: left;
+}
+
+aside {
+	padding: 1%;
+	/*border-left: 5px dotted #D8C358;*/
+	margin: 1%;
+	width: 30%;
+	float: right;
+}
+
+footer {
+	padding: 1%;
+	/*border: 10px double #25271E;*/
+	margin: 3% 5% 0;
+	text-align: center;
+	clear: both;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px 15px;
+	margin: 1%;
+}
+
+a {
+	color: #6D0839;
+}
+
+.green {
+	background-color: #D0E799;
+	padding: 10px;
+	text-align: center;
+}
+
+.social{
+    /*background-color:#fff;*/
+    position:fixed;
+    width: 35px;
+    padding:10px;
+    top:10px;
+    left:0px;
+}

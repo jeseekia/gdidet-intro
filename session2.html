@@ -1,0 +1,1809 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Class 2 &mdash; HTML/CSS &mdash; Girl Develop It</title>
+
+		<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, Jen Myers, Cara Jo Miller, Laura Eagin, Nicole Rodriguez and Leeann Drees.
+
+    	The course is meant to be taught in 2 four-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+		<meta name="author" content="Girl Develop It">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="custom.css">
+		<!-- For syntax highlighting -->
+		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
+
+		<!-- If use the PDF print sheet so students can print slides-->
+		
+		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide-->
+			<div class="slides">
+			  <!-- Opening slide -->
+			  <!-- WiFi Info -->
+			  <section>
+          <h3 style="margin-top:55px;">Set Up for Today:</h3>
+          <div class="right" style="width: 35%;">
+            <img src="images/folderstructure3.jpg" style="border:none; box-shadow: none; width:75%;"/>
+          </div>
+          <div class="left" style="width: 60%;"><ul>
+          <li>Download the Session 2 Project Files from <a href="http://gdidetroit.com/intro/" target="_blank">gdidetroit.com/intro/</a></li>
+          <li>Save the html-site2 folder somewhere memorable on your computer</li>
+</ul></div>
+			  </section>
+			  
+        <section>
+          <img src = "images/gdi_logo_badge.png" style="border: none; box-shadow: none;">
+          <h3>Beginning HTML and CSS</h3>
+          <h4>Session 2</h4>
+        </section>
+        
+        <!-- Welcome-->
+        <section>
+          <h3>Welcome!</h3>
+          <div class = "left-align">
+          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          <p class ="green">Some "rules"</p>
+          <ul>
+            <li>We are here for you!</li>
+            <li>Every question is important</li>
+            <li>Help each other</li>
+            <li>Have fun</li>
+          </ul>
+          </div>
+        </section>
+        
+        <!-- Roles of HTML v CSS -->
+        <section>
+          <h3>Anatomy of a website</h3>
+          <div class = "blue"> Your Content</div>
+          <div><span class = "blue">+ HTML: </span>Structure</div>
+          <div><span class = "blue">+ CSS: </span>Presentation</div>
+          <div class = "blue">= Your Website</div>
+            <img src="images/example_site_content.jpg" alt="Example of site content" width="25%"/>
+            <img src="images/example_site_HTML.jpg" alt="Example of site structure" width="25%"/>
+            <img src="images/example_site_HTML_CSS.jpg" alt="Example of site with CSS" width="25%"/>
+
+        </section>
+        <!--anatomy of a tag -->
+        <section>
+        	<h3>Review: Tag Breakdown</h3>
+        	<img src="images/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none; width:600px;" />
+        </section>
+        <!-- The CSS Rule-->
+        <section>
+        	<h3>Review: The CSS Rule</h3>
+        	<img src="images/cssrule.png" alt="The CSS Rule" style="border: none; box-shadow: none;"/>
+        </section>
+        <section>
+          <h3>Homework: Inspecting Element</h3>
+          <p>Let's right-click, "Inspect Element" &amp; look at some code!</p>
+          <br/>
+          <a href="http://alistapart.com" target="_blank"><img src="images/ala.png" alt="A List Apart homepage" target="_blank" height="350px"/></a>
+           <a href="http://tattly.com" target="_blank"><img src="images/tattly.png" alt="Tattly homepage" target="_blank" height="350px"/></a>
+        </section>
+
+        <!-- <section>
+       	<h3>Follow-Up On Questions</h3>
+        	<ul>
+        		<li>Here's the correct link for our <a href="http://gdidetroit.com/intro/css-properties-list.pdf" target="_blank">CSS Properties List</a></li>
+        		<li>You can always find it at <a href="http://gdidetroit.com/intro/" target="_blank">gdidetroit.com/intro/</a></li>
+        		<li>An explanation on <a href="http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/" target="_blank">pixels vs. ems vs. percentages</a></li>
+        	</ul>
+        </section> -->
+
+        <section>
+        	<h3>What we'll be making today</h3>
+        		<p>Today we will be making a site from scratch using HTML5 elements to create a header, footer, sidebar and a content area.</p>
+            <p>Then we'll add CSS styles to make it pretty*!</p>
+        		<img src="images/making-this-today-2.png" width="500px">
+            <div style="clear:both;"><small>* prettiness not guaranteed</small></div>
+        </section>
+
+        <!-- Folder Structure -->
+        <section>
+          <h3>Folder Structure</h3>         
+          <div class="left" style="width: 45%;">
+          <p class="left-align"><strong>Have you downloaded the project files yet?</strong></p><br />
+          <ul>
+            <li>Our directory is called html-site2</li>
+            <li>It holds our <code>index.html</code> and <code>styles.css</code> files, as well as a subdirectory of images</li>
+          </ul>
+          </div>
+          <div class="right" style="width: 45%;">
+            <img src="images/folderstructure3.jpg" style="border:none; box-shadow: none;"/>
+          </div>
+        </section>
+
+
+       	<section>
+       		<h3>Wait...why are we calling it <code>index.html?</code></h3>
+       		<ul style="font-size: 85%;">
+       			<li class="fragment"><code>index.html</code> is the default filename a web browser looks for when pointed to any directory.</li>
+       			<li class="fragment">You won't necessarily see it reflected in the URL &mdash; we just see <span class="pink">http://girldevelopit.com</span>, but the browser is displaying <span class="pink">http://girldevelopit.com/index.html</span>. Sneaky!</li>
+       			<li class="fragment">You should have an <code>index.html</code> file for every directory on your site. If not, users will see a list of all your filenames, like this:</li> 
+       			<center><img class="fragment" src="images/noindex.png"></center>
+       		</ul>
+       		<small class="fragment">You can name your CSS stylesheets whatever you want, but <code>styles.css</code> is the standard.</small>
+       	</section>
+
+       	<section>
+          <h3>Let's Develop It: Setting up our HTML file for today</h3>
+         <p class="align-left">Open your new <code>index.html</code> file<br/>
+          Remember to start with <code>doctype</code> &amp; <code>html</code> tags.<br>
+          Add the code to link to <code>styles.css</code>!</p>
+  
+                <pre class="fragment"><code class = "html" style="min-height: 300px; max-height: 475px;">
+        &lt;!DOCTYPE html>
+        &lt;html>
+
+           &lt;head>
+              &lt;link rel="stylesheet" type="text/css" href="styles.css" />
+              &lt;title>Title of the page &lt;/title>
+           &lt;/head>
+
+           &lt;body>
+           &lt;/body>
+
+        &lt;/html>
+          </code></pre>
+        </section>
+
+        <section>
+        	<h3>Let's Develop It: Setting up our CSS file for today</h3>
+        	<p class="left-align">We'll begin our CSS file with a <strong>reset</strong>. </p>
+        	<p class="left-align">Resets get rid of most of the styles the browser wants to apply automatically, so we have more control over the display of our page!</p>
+        	<pre>
+        		<code>
+/* CSS Reset */
+
+html, body, div, span, a, em, img, strong, header, nav, section, aside, footer { 
+	background: transparent; 
+	border: 0; 
+	margin: 0; 
+	padding: 0; 
+}
+        		</code>
+
+        	</pre>
+        		
+        </section>
+        
+
+        <!-- Inline v block again   *Removed 1-8-14. Feels redundant.
+        <section>
+          <h3>Block &amp; Inline Elements</h3>
+          <ul>
+            <li>CSS divides HTML into two types: inline and block.</li>
+            <li>After block elements, browsers render a new line.</li>
+            <li>Inline elements: img, a, br, em, strong</li>
+            <li>Block elements: p, h1, ul, li, almost everything else</li>
+          </ul>
+        </section>  -->
+        
+
+    <!-- Structural Elements -->
+      <section>
+          <h3>Structural Elements!</h3>
+          Structuring our content, creating layout
+      <div class="left" style="width: 35%;">
+      	<br/>	<br/>	<br/>
+      	<p>Example:</p>
+      	<ul>
+      	<li class="yellow">Header</li>
+      	<li class="pink">Main</li>
+      	<li class="blue">Aside</li>
+      </ul>
+      </div>
+      <div class="right" style="width: 65%;">
+          <img src="images/html5_structure.jpg" style="border:none; box-shadow: none;"/>
+      </div>
+        </section>
+
+        <section>
+        	<h3>Structural Elements!</h3>
+        	<a href="http://girldevelopit.com/chapters/detroit" target="_blank"><img src="images/gdisite-html5.jpg"></a>
+        </section>
+
+          
+    <!-- Header -->
+          <section>
+            <h3>HTML5 Element: <code>&lt;header&gt;</code></h3>
+            <ul>
+              <li>Container for a group of introductory or navigational aids</li>
+              <li>Document can have multiple header elements</li>
+              <li>E.g. One for the page, one for each section</li>
+            </ul>
+            <pre>
+            	<code class="html">
+&lt;header>
+
+   &lt;nav>
+
+       &lt;ul>
+          &lt;li>Your menu&lt;/li>
+          &lt;li>Items&lt;/li>
+          &lt;li>Go Here&lt;/li>
+          &lt;li>:)&lt;/li>
+       &lt;/ul>
+   
+   &lt;/nav>
+
+&lt;/header>
+            	</code>
+
+            </pre>
+          </section> 
+
+
+    <!-- Main -->
+        <section>
+          <h3>HTML5 Element:  <code>&lt;main&gt;</code></h3>
+          <ul>
+            <li>Use once per page to mark where main content begins</li>
+            <li>Helpful for screen readers/assistive technology, content syndication, and mobile browsers</li>
+             <pre>
+             	<code class ="html">
+&lt;main>
+   &lt;h1>Web Browsers&lt;/h1>
+   &lt;p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.&lt;/p>
+
+   &lt;article>
+      &lt;h1>Google Chrome&lt;/h1>
+      &lt;p>Google Chrome is a free, open-source web browser developed by Google.&lt;/p>
+   &lt;/article>
+
+   &lt;article>
+      &lt;h1>Mozilla Firefox&lt;/h1>
+      &lt;p>Firefox is a free, open-source web browser from Mozilla.&lt;/p>
+   &lt;/article>
+&lt;/main>
+             	</code>
+             </pre>
+        </section>
+
+
+<!--<section>
+  <h3>HTML5 Element:  <span class="yellow">&lt;section&gt;</span></h3>
+  <ul>
+              <li>Group together thematically related content</li>
+              <li>Similar to prior use of the div, but div has no semantic meaning</li>
+            </ul>
+          </section> -->
+        
+        <!-- Aside -->
+          <section>
+            <h3>HTML5 Element:  <code>&lt;aside&gt;</code></h3>
+            <ul>
+              <li>Tangentially related content</li>
+              <li>E.g. sidebar, pull quotes</li>
+            </ul>
+
+            <aside class="pullquote"><p><strong>Ask yourself:</strong><br/>Can the content within the aside can be removed without reducing the meaning of the main content?</p></aside>
+           
+            <div class="left" style="width: 100%;">
+            	 <br/>
+<pre>
+<code class="html">
+&lt;p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.&lt;/p>
+
+&lt;aside>
+  &lt;h4>Fun Fact:&lt;/h4>
+  &lt;p>The first web browser was called WorldWideWeb.&lt;/p>
+&lt;/aside>
+</code>
+</pre>
+</div>
+          </section>
+
+        <!-- Footer -->
+          <section>
+            <h3>HTML5 Element:  <code>&lt;footer&gt;</code></h3>
+            <ul>
+              <li>Contains information about its containing element</li>
+              <li>E.g. who wrote it, copyright, links to related content, etc.</li>
+              <li>Document can have multiple footer elements</li>
+              <li>E.g. One for the page, one for each blog post or section</li>
+            </ul>
+            <pre>
+<code class="html">
+&lt;footer>
+    &lt;p>&copy;2014 Girl Develop It. Super fancy codes written by Nicole and Leeann.&lt;/p>
+&lt;/footer>
+
+</code>
+            </pre>
+          </section>
+         
+<section>
+            <h3>HTML5 Element:  <code>&lt;nav&gt;</code></h3>
+            <ul>
+              <li>Contains major navigational information</li>
+              <li>Usually a list of links</li>
+              <li>Often lives in the header</li>
+              <li>E.g. site navigation</li>
+            </ul>
+
+             <pre>
+            	<code class="html">
+&lt;header>
+   &lt;nav>
+       &lt;ul>
+          &lt;li>Your menu&lt;/li>
+          &lt;li>Items&lt;/li>
+          &lt;li>Go Here&lt;/li>
+          &lt;li>:)&lt;/li>
+       &lt;/ul>
+   &lt;/nav>
+&lt;/header>
+            	</code>
+
+            </pre>
+          
+          </section>
+          
+          <!--<section>
+            <h3>HTML5 Element: <span class="yellow">&lt;article&gt;</span></h3>
+            <ul>
+              <li>Self-contained related content</li>
+              <li>E.g. blog posts, news stories, comments, reviews, forum posts</li>
+            </ul>
+          </section>-->
+      
+
+        <!-- Exercise --> 
+
+	    <section>
+          <h3>Let's Develop It: Header + Nav</h3>
+         <p>
+          Inside the <code>body</code>, give your page a <code>header</code> with a <code>nav</code>.</p> 
+         <br/>
+         <pre>
+         	<code>
+&lt;body>
+  &lt;header>
+	&lt;nav>
+	&lt;/nav>
+  &lt;/header>
+&lt;/body>
+         	</code>
+         </pre>
+     </section>
+
+     <section>
+     	<h3>Let's Develop It: Header + Nav</h3>
+     	<ul>
+     		<li>Add a page title in an <code>h1</code> to the <code>header</code>.</li>
+     		<li>Add an unordered list of page links to the <code>nav</code>:</li>
+  		<pre>
+  			<code>
+&lt;h1>Girl Develop It Detroit&lt;/h1>
+&lt;nav>
+  &lt;ul>
+	&lt;li>&lt;a href="about.html">About&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="events.html">Events&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+  			</code>
+  		</pre>
+     </section>
+
+     <section>
+     	<h3>Let's Develop It: Main</h3>
+        <p>Let's create a <code>main</code> content area &amp; fill it in with paragraphs of dummy text (this time from <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>), as well as some headings and images:</p>
+
+         <pre><code class = "html"> 
+&lt;h2>About Girl Develop It Detroit&lt;/h2>
+
+Skateboard wolf church-key ea viral pop-up, locavore squid. Roof party you probably haven't heard of them yr, commodo minim chambray Schlitz food truck vero health goth cliche. American Apparel locavore magna pariatur occaecat. Blue Bottle whatever Marfa, VHS est incididunt quinoa. Odd Future locavore esse, excepteur Vice mustache fugiat labore nihil street art taxidermy Banksy paleo wayfarers photo booth. YOLO Tumblr messenger bag, deserunt PBR aliquip fingerstache cillum bespoke scenester Pitchfork. Mlkshk ugh synth four dollar toast lo-fi, aute VHS.
+
+Quis scenester meggings commodo. Marfa gastropub roof party cardigan. Tote bag direct trade cupidatat, YOLO ad Austin wolf fap hella banh mi normcore Odd Future Bushwick. Duis bitters Pinterest Intelligentsia, actually single-origin coffee Vice odio assumenda normcore irure typewriter. Dolor tofu cliche Banksy plaid, freegan DIY American Apparel Helvetica consectetur exercitation literally keytar organic lo-fi. 3 wolf moon tousled Odd Future seitan cillum heirloom, Thundercats laboris. Swag four dollar toast heirloom direct trade, exercitation tousled cillum Echo Park.
+
+&lt;h3>Our Workshops:&lt;/h3>
+Forage quinoa street art sustainable. Thundercats heirloom mixtape, church-key Intelligentsia non quis tote bag nihil placeat. Irure selfies reprehenderit small batch, paleo esse ennui enim seitan irony vegan craft beer nulla mlkshk. Four dollar toast taxidermy beard, fingerstache food truck scenester sartorial dolore excepteur pork belly Helvetica chia nisi commodo Williamsburg. Salvia Helvetica cray, Intelligentsia biodiesel ugh vero Wes Anderson four dollar toast. Cray Bushwick sartorial ut Banksy cliche. Meggings sriracha nulla Etsy VHS farm-to-table.
+
+Helvetica flexitarian pour-over labore selvage. Pitchfork nostrud cardigan, cronut try-hard Kickstarter flexitarian pickled vero Brooklyn meggings retro. Tilde bicycle rights butcher distillery. Chia 8-bit whatever YOLO Austin laboris. Asymmetrical put a bird on it salvia before they sold out, pour-over cupidatat ethical tattooed nulla banjo cliche irure normcore. Wayfarers culpa twee trust fund, pariatur freegan meditation. Fap lumbersexual pariatur, roof party adipisicing VHS small batch placeat hoodie chambray deserunt mumblecore yr.
+
+&lt;h3>Our Social Events:&lt;/h3>
+Lomo listicle laborum, paleo drinking vinegar Echo Park selvage Odd Future lumbersexual Etsy tousled. Ad eu twee, incididunt sunt leggings Schlitz. Slow-carb hoodie Tumblr irony Wes Anderson meditation, swag blog craft beer ut culpa skateboard tilde. Chambray consequat nulla slow-carb exercitation. Tattooed lumbersexual four dollar toast, Echo Park chambray street art pour-over chia delectus hoodie XOXO excepteur. Actually cillum meggings Echo Park. Pug pariatur hella, ex nulla Godard biodiesel messenger bag placeat.
+
+&lt;h4>Our Amazing Sponsors:&lt;/h4>
+	&lt;img src="images/grandcircus.jpg">
+	&lt;img src="images/bizdom.png">
+         </code></pre>
+      </section>
+
+      <section>
+      	<h3>Let's Develop It: Main</h3>
+      	<ul>
+      	<li>Add <code>&lt;p></code> tags around each paragraph.</li>
+      	<li>Add alt attributes to both images.</li>
+      	<li>Link the sponsor logos to each company's websites (bizdom.com, grandcircus.co)</li>
+      </ul>
+      </section>
+
+      <!-- <section>
+      	<h3>Check In</h3>
+      	<p>Your html file should be shaping up like so:</p>
+      	<pre>
+      		<code>
+&lt;!doctype html>
+&lt;html>
+&lt;head>
+  &lt;title>Girl Develop It Detroit&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;header>
+  &lt;h1>Girl Develop It Detroit&lt;/h1>
+	&lt;nav>
+	  &lt;ul>
+		&lt;li>&lt;a href="about.html">About&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="events.html">Events&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+	  &lt;/ul>
+	&lt;/nav>
+  &lt;/header>
+  &lt;main>
+		&lt;p>Skateboard wolf church-key ea viral pop-up, locavore squid. Roof party you probably haven't heard of them yr, commodo minim chambray Schlitz food truck vero health goth cliche. American Apparel locavore magna pariatur occaecat. Blue Bottle whatever Marfa, VHS est incididunt quinoa. Odd Future locavore esse, excepteur Vice mustache fugiat labore nihil street art taxidermy Banksy paleo wayfarers photo booth. YOLO Tumblr messenger bag, deserunt PBR aliquip fingerstache cillum bespoke scenester Pitchfork. Mlkshk ugh synth four dollar toast lo-fi, aute VHS.&lt;/p>
+
+		&lt;p>Quis scenester meggings commodo. Marfa gastropub roof party cardigan. Tote bag direct trade cupidatat, YOLO ad Austin wolf fap hella banh mi normcore Odd Future Bushwick. Duis bitters Pinterest Intelligentsia, actually single-origin coffee Vice odio assumenda normcore irure typewriter. Dolor tofu cliche Banksy plaid, freegan DIY American Apparel Helvetica consectetur exercitation literally keytar organic lo-fi. 3 wolf moon tousled Odd Future seitan cillum heirloom, Thundercats laboris. Swag four dollar toast heirloom direct trade, exercitation tousled cillum Echo Park.&lt;/p>
+
+		&lt;p>Forage quinoa street art sustainable. Thundercats heirloom mixtape, church-key Intelligentsia non quis tote bag nihil placeat. Irure selfies reprehenderit small batch, paleo esse ennui enim seitan irony vegan craft beer nulla mlkshk. Four dollar toast taxidermy beard, fingerstache food truck scenester sartorial dolore excepteur pork belly Helvetica chia nisi commodo Williamsburg. Salvia Helvetica cray, Intelligentsia biodiesel ugh vero Wes Anderson four dollar toast. Cray Bushwick sartorial ut Banksy cliche. Meggings sriracha nulla Etsy VHS farm-to-table.&lt;/p>
+
+		&lt;p>Helvetica flexitarian pour-over labore selvage. Pitchfork nostrud cardigan, cronut try-hard Kickstarter flexitarian pickled vero Brooklyn meggings retro. Tilde bicycle rights butcher distillery. Chia 8-bit whatever YOLO Austin laboris. Asymmetrical put a bird on it salvia before they sold out, pour-over cupidatat ethical tattooed nulla banjo cliche irure normcore. Wayfarers culpa twee trust fund, pariatur freegan meditation. Fap lumbersexual pariatur, roof party adipisicing VHS small batch placeat hoodie chambray deserunt mumblecore yr.&lt;/p>
+
+		&lt;p>Lomo listicle laborum, paleo drinking vinegar Echo Park selvage Odd Future lumbersexual Etsy tousled. Ad eu twee, incididunt sunt leggings Schlitz. Slow-carb hoodie Tumblr irony Wes Anderson meditation, swag blog craft beer ut culpa skateboard tilde. Chambray consequat nulla slow-carb exercitation. Tattooed lumbersexual four dollar toast, Echo Park chambray street art pour-over chia delectus hoodie XOXO excepteur. Actually cillum meggings Echo Park. Pug pariatur hella, ex nulla Godard biodiesel messenger bag placeat.&lt;/p>
+
+  &lt;/main>
+&lt;/body>
+&lt;/html>
+      		</code>
+      	</pre>
+      </section> -->
+
+      <section>
+      	<h3>Let's Develop It: Aside</h3>
+      	<ul>
+      		<li>Underneath <code>&lt;main></code>, let's add an <code>&lt;aside></code> with an image, heading, and list of links:</li>
+      		<pre>
+      			<code>
+&lt;aside>	
+  &lt;img src="images/gdi-logo.png" alt="Girl Develop It Logo">
+  &lt;h3>Other Great Resources for Learning to Code:&lt;/h3>
+  &lt;ul>
+    &lt;li>&lt;a href="http://gdiannarbor.com">Girl Develop It Ann Arbor&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="http://skillcrush.com">Skillcrush&lt;/a> &lt;/li>
+    &lt;li>&lt;a href="http://teamtreehouse.com">Treehouse&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="http://codecademy.com">Codecademy&lt;/a> &lt;/li>
+  &lt;/ul>
+&lt;/aside>
+      			</code>
+      		</pre>
+      	</ul>
+      </section>
+
+      <section>
+      	<h3>Let's Develop It: Footer</h3>
+      	<p>Our last element for the moment! Let's put it right after <code>aside</code></p>
+      	<pre>
+      		<code>
+&lt;footer>
+	&lt;p>&copy; 2015 Leeann. Created in Girl Develop It - Detroit's HTML &amp; CSS workshop!&lt;/p>
+&lt;/footer>
+      		</code>
+      	</pre>
+      </section>
+
+      <!--  <section>
+          <h3>Check-in</h3>
+          <p>Now your <span class="blue">index.html</span> file should have the following structure:</p>
+          <pre><code class="html">
+            &lt;!doctype html>
+              &lt;html>
+
+              &lt;head>
+              &lt;/head>
+              
+              &lt;body>
+
+                  &lt;header>
+                  	&lt;nav>
+                  	&lt;/nav>
+                  &lt;/header>
+
+                  &lt;main>
+                  &lt;/main>
+
+                  &lt;aside>
+                  &lt;/aside>
+
+                  &lt;footer>
+                  &lt;/footer>
+
+              &lt;/body>
+              &lt;/html>
+            </code></pre>
+        </section>-->
+
+       <!-- <section>
+          <h3>Add a list and links</h3>
+          <ul>
+          <li>Add a list to the sidebar</li>
+          <li>Add several links</li>
+        </ul>
+        	<pre><code class="html">
+  &lt;a href="http://girldevelopit.com" target="_blank"/>My Link&lt;/a>
+
+    &lt;ul>
+       &lt;li>List Item&lt;/li>
+       &lt;li>Another List Item&lt;/li>
+       &lt;li>Another List Item&lt;/li>
+       &lt;li>&lt;a href="http://girldevelopit.com" target="_blank"/>My Link&lt;/a>&lt;/li>    
+       &lt;li>Another List Item&lt;/li>
+    &lt;/ul>
+                    </code></pre>
+                </section>-->
+  <section>
+    <h3>Let's Develop It: Comments!</h3>
+    <ul>
+      <li>Use HTML comments to keep your code clean &amp; readable.</li>
+      <li>Add comments to remind yourself at a glance where sections begin and end.</li>
+      <li>Don't like one of the images I made you use? Comment it out!</li>
+    </ul>
+    <pre>
+      <code>
+    &lt;!-- this is a comment -->
+      </code>
+    </pre>
+  </section>
+
+
+  <!-- Inline vs. block-->
+        <section>
+          <h3>Inline vs Block</h3>
+          <div class = "left" style="width: 50%; text-align: left; font-size: 85%;">
+            <div class = "fragment">
+              <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
+              <p>They appear on the next line, like paragraphs</p>
+            </div>
+            <ul>
+              <li class="fragment"><span class="green">Block elements</span>: <code>p</code>, <code>h1</code>, <code>ul</code>, <code>li</code>, almost everything else</li>
+            </ul> 
+            <br/><br/>
+            <div class = "fragment">
+              <p>There are also <span class="green">"inline"</span> elements</p>
+              <p>They appear on the same line that they are written on.</p>
+            </div>
+            <ul>
+              <li class="fragment"><span class="green">Inline elements</span>: <code>img</code>, <code>a</code>, <code>br</code>, <code>em</code>, <code>strong</code></li>
+            </ul>
+          </div>
+          <div class="right fragment">
+            <img src="images/example-blockinline.png" alt="example of inline and block elements" />
+          </div>
+        </section>
+
+        <section>
+        	<h3>Inline vs. Block</h3>
+        	<p>We can tell an element to display inline or block with CSS:</p>
+
+        		<pre><code class ="css">
+              nav ul li {
+              display: inline;
+          	}
+              </code></pre>
+        </section>
+      
+  <!-- Box model-->
+        <section>
+          <h3>Box Model</h3>
+          <div style="width:30%; float:left;">
+            <p style="text-align:left; font-size:80%;">The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.</p> 
+            <p style="text-align:left; font-size:80%;">The box model allows us to place a border around elements and space elements in relation to other elements.</p>
+            <small>Definition from <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCgQhi0wAA&url=http%3A%2F%2Fwww.w3schools.com%2Fcss%2Fcss_boxmodel.asp&ei=eEsrU6_mCcuuqQGmt4HgCg&usg=AFQjCNEDIKDFEnu59p1akFM5Hk9scACuKQ&sig2=xCrX7kFEUSukjWNosFs62g&bvm=bv.62922401,d.aWM">w3schools</a></small>
+          </div>
+
+          <div style="width:65%; float:right;"><img src ="images/box-model.png" style="border:none;"/>
+          </div>
+        </section>
+
+        <section>
+          <h3>Alternate Box Model</h3>
+          <img src ="images/box_model_cat.jpg" width="650"/>
+        </section>
+        
+<!-- Padding -->
+        <section>
+          <h3>Padding</h3>
+          <p>Space between the border and the content</p>
+          <p>Adds to the total width of the box.</p>
+          <img src ="images/box-model-padding.png" width="600"/>
+        </section>
+        
+        <section>
+          <h3>Padding (all sides)</h3>
+          15 pixels on all sides
+              <pre><code class ="css">
+              padding: 15px;
+              </code></pre><br/>
+          <h3>Padding Top</h3>
+
+          10 pixels on top only
+              <pre><code class ="css">
+              padding-top: 10px;
+              </code></pre>
+        </section>
+       
+        <section>
+          <h3>One Value</h3>
+          <pre><code class = "css">
+          .all_sides{
+            padding: 15px;
+          }
+
+          </code></pre>
+
+             <h3>Two Values</h3>
+            <pre><code class = "css">
+            .topANDbottom_rightANDleft {
+              padding: 10px 5px; 
+            }
+            </code></pre>
+
+                      <h3>Multiple Values</h3>
+            <pre><code class = "css">
+            .top_right_bottom_left {
+              padding: 10px 5px 3px 5px;
+            }
+            </code></pre>
+                    </section>
+                   
+                    <section>
+          <h3>Padding</h3>
+        <img src ="images/box-model-padding2.png" width="650"/>
+        </section>
+
+       <!--<section>
+          <h3>Before we can develop it <br/>we need a CSS file</h3>
+          <ul>
+            <li>Type this line of code in the head of your HTML file:</li>
+          <pre><code class="html">
+            &lt;link rel="stylesheet" type="text/css" href="styles.css" />
+          </code>
+        </pre>
+            <li>Create a new .css file</li>
+            <li>Make sure it is named "<span class="blue">styles.css</span>" and saved in the same folder as your HTML.</li>
+          </ul>
+        </section>-->
+
+      <!-- Exercise -->
+       <section>
+       <h3>Let's Develop it!</h3>
+       <p>Let's add some padding to our elements.</p>
+           <pre><code class ="css">
+main {
+	padding: 2%;
+}
+
+aside {
+	padding: 1%;
+}
+
+footer {
+	padding: 1%;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px 15px;
+}
+	</code>
+	</pre>
+       </section>
+        
+    <!-- Border-->
+        <section>
+          <h3>Border</h3>
+          <p> <span class="green">The edge around the box</span></p>
+          <img src ="images/box-model-border.png" width="650">
+        </section>
+        
+        <section>
+          <h3>Border</h3>
+          <p>Border is specified in "thickness, style, color."</p>
+          <p>A solid red border</p>
+            <pre><code class = "css">
+            .normal {
+              border: 1px solid #ff0000;
+            }
+            </code></pre><br/>
+                      <p>A thick dotted black top border</p>
+            <pre><code class ="css">
+            .thick {
+              border-top: 4px dotted #000000;
+            }
+            </code></pre>
+        </section>
+
+      <section>
+          <h3>Border</h3>
+            <p>Two diﬀerent border styles</p>
+            <pre><code class ="css">
+            .woah {
+              border-top: 1px solid #ff0000;
+              border-bottom: 4px dotted #000000;
+            }
+            </code></pre>
+            		</section>
+       
+        <section>
+          <h3>Fun With Borders</h3>
+          <p>You can specify each property separately, or all three together.</p>
+              <pre><code class ="css">
+              .another_border {
+                border-width: 10px;
+                border-style: dashed;
+                border-color: #666666;
+              }
+              </code></pre>
+                      </section>
+
+    <!-- Exercise -->                  
+        <section>
+       <h3>Let's Develop it!</h3>
+       <p>Let's add borders to our elements.</p>
+       <pre><code class = "css">
+main {
+	border: 5px solid #6D0839;
+}
+
+aside {
+	border-left: 5px dotted #D8C358;
+}
+
+footer {
+	border: 10px double #25271E;
+}
+        </code></pre>
+       </section>
+
+  <!-- Margin -->
+        <section>
+          <h3>Margin</h3>
+          <p>The transparent area around the box that separates it from other elements.</p>
+          <img src ="images/box-model-margin.png" width="650"/>
+        </section>
+        
+        <section>
+          <h3>Margin</h3>
+          <p>15 pixels on all sides</p>
+            <pre><code class = "html">
+              margin: 15px;
+            </code></pre>
+                      <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
+            <pre><code class ="html">
+              margin: 10px 5px 3px 5px;
+            </code></pre>
+                      <p>10 pixels on top</p>
+            <pre><code class = "html">
+              margin-top: 10px;
+            </code></pre>
+                    </section>
+        
+        <section>
+          <h3>Auto Margin</h3>
+          <p>If a margin is set to auto on a box that has width, it will take up as much space as possible.</p>
+          <p class="yellow">CENTERED</p>
+            <pre><code class ="html">
+              margin: auto;
+              width: 300px;
+            </code></pre>
+                      <p class="yellow">FLUSH-RIGHT</p>
+            <pre><code class = "html">
+              margin-left: auto;
+              margin-right: 5px;
+              width: 300px;
+            </code></pre>
+            <small>Sometimes centering is tricky! Here's a <a href="http://css-tricks.com/centering-css-complete-guide/">complete guide to centering in CSS</a>.</small>
+        </section>
+
+		<!-- Exercise -->
+		<section>
+			<h3>Let's Develop it!</h3>
+			<p>Let's add some margins to our elements.</p>
+			<p>Let's center our entire page in the browser.</p>
+		</section>
+
+    <section>
+      <h3>Check-in</h3>
+      <p>You should now have some rules like these:</p>
+      <pre>
+        <code class="css">
+body {
+	margin: 0 auto;
+}
+
+main {
+	margin: 2%;
+}
+
+aside {
+	margin: 1%;
+}
+
+footer {
+	margin: 3% 5% 0;
+}
+
+nav ul li {
+	margin: 1%;
+}
+        </code>
+      </pre>
+    </section>
+
+  <!-- Width-->
+		<section>
+			<h3>Property: <span class="yellow">Width</span></h3>
+			<p>Sets the width of an element.</p>
+      <p>Value can be in pixels, percentage, or ems.</p>
+			<small>Does not include padding or borders, remember these add to the width.</small>
+		</section>
+
+  <!-- Height-->
+		<section>
+			<h3>Property: <span class="yellow">Height</span></h3>
+			<p>Sets the height of an element.</p>
+      <p>Value can be in pixels, percentage, or ems.</p>
+			<small>Does not include padding or borders, remember these add to the width and height.</small>
+		</section>
+
+		<!-- Exercise -->
+		<section>
+			<h3>Let's develop it!</h3>
+			<div class="left-align">
+				<p style="text-decoration:underline;">Target each element with CSS:</p>
+				<p>Make the <code>body</code> 80% wide.</p>
+				<p>Make the sidebar (<code>&lt;aside&gt;</code>) 30% wide.</p>
+				<p>Make the content area (<code>&lt;main&gt;</code>) 60% wide.</p>
+				<p>Make the <code>header</code> 150px tall</p>
+			</div>
+		</section>
+    <section>
+      <h3>Check-in</h3>
+      <p>Your styles.css file should now contain rules like these:</p>
+      <pre>
+        <code class="css">
+          body {
+          width: 80%;
+          }
+
+          aside {
+          width: 30%;
+          }
+
+          main {
+          width: 60%;
+          }
+
+          header {
+          height: 150px;
+          }
+        </code>
+      </pre>
+      <small>Your sidebar isn't on the side yet, though! Don't worry, we'll get there. :)</small>
+    </section>
+
+
+	<!-- What's wrong with my code-->
+       <section>
+        <h3>Pop Quiz</h3>
+        <p>Which one is invisible? Margin, padding or border?</p>
+        <img src ="images/box-model-padding.png" width="650"/>
+       </section>
+
+       <section>
+        <h3>Pop Quiz</h3>
+        <p>What color will the paragraph text be?</p>
+        <pre>
+        <code class="css">
+      	p {
+      	color: red;
+        }
+
+        p {
+        color: blue;
+    	  }
+        </code>
+    </pre>
+    <small class="fragment">The paragraph text will be <span class="blue">blue</span>, because bottom rules override earlier rules.</small>
+       </section>
+
+
+        <section>
+        	<h3>Let's Develop It: Style Your Page</h3>
+        	<p>Now that we've got some structure and content, let's take some time to add colors and fonts with CSS.</p>
+        	<pre class="fragment"><code>
+body {
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	background-color: #FBEFF4;
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	/*border: 10px double #25271E;*/
+}
+
+aside {
+	/*border-left: 5px dotted #D8C358;*/
+}
+
+a {
+	color: #6D0839;
+}
+        	</code></pre> 	
+        </section>
+
+     <section>
+      <h3>Which element should I use?</h3>
+             <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank"><img src="images/h5d-sectioning-flowchart.png" alt="HTML5 Doctor chart" width="800"/></a>
+          </section>
+
+  <!-- Divs -->
+      <section> 
+          <h3>Element: <code>div</code></h3>
+          <p style="font-size:85%;">If no specific HTML5 structural element applies, then use a <code>&lt;div&gt;</code></p>
+            <ul style="font-size: 75%;">
+              <li>A division, or section of content within an HTML page.</li>
+              <li>Used to group elements to format them with CSS.</li>
+              <li>Apply IDs &amp; Classes to <code>&lt;div&gt;</code>s to give the browser more information about them.</li>
+            </ul>
+            <ul style="width: 70%;">
+              <li><pre><code>
+              &lt;div>
+                 &lt;p>Content&lt;p>
+                 &lt;p>Content&lt;p>
+              &lt;/div></code></pre></li>
+              <li><pre><code>
+              &lt;div id="social">
+                 &lt;h1>Main Heading&lt;h1>
+                 &lt;p>....&lt;/p>
+              &lt;/div></code></pre></li>
+              <li>
+              <pre><code>
+              &lt;div class="sub-content">
+                 &lt;p>Some more content&lt;p>
+              &lt;/div></code></pre></li>
+              </ul>
+        </section>
+  
+        <section>
+          <h3>Grouping elements with <code>&lt;div&gt;</code></h3>
+          <div class = "left-align">
+          <ul>
+          <li>The <code>&lt;div&gt;</code> tag is used everywhere to group elements together into sections.</li>
+          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple &amp; bold, but we don't want any other paragraphs to be right-aligned?</li>
+          <li>We would wrap them in a <code>&lt;div&gt;</code> element to style them differently.</li>
+          </ul>
+           </div>
+        </section> 
+        
+        <section>
+          <h3>Grouping elements with <code>&lt;div&gt;</code>, cont.</h3>
+            <pre><code class ="html">
+    &lt;div class="align-right">
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
+      &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
+    &lt;/div>
+    &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
+    &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
+            </code></pre>
+            <pre><code class = "css">
+            .align-right{
+              text-align:right;
+              color: purple; 
+              font-weight: bold;
+            }
+            </code></pre>
+            <div style = "text-align:right; color: purple; font-weight: bold; font-size: 70%;">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class = "left-align" style="font-size: 70%;">
+            <p>Magna aliqua. Ut enim ad minim veniam.</p>
+            <p>Quis nostrud exercitation ullamco.</a>
+
+            </div>
+        </section>   
+
+<!-- Let's Develop It -->
+  <section>
+    <h3>Let's Develop It!</h3>
+    <ul>
+      <li>Let's surround the Sponsors section of our content with a <code>div</code></li>
+      <pre>
+        <code class="html">
+&lt;div>
+  &lt;h4>Our Amazing Sponsors:&lt;/h4>
+  &lt;img src="images/grandcircus.jpg" alt="Grand Circus">
+  &lt;img src="images/bizdom.png" alt="Bizdom">
+&lt;/div>
+        </code>
+      </pre>
+  </section>
+
+<!-- IDs vs Classes -->
+  <section>
+  	<h2>Using IDs and Classes</h2>
+  	<p>Often, targeting all of the HTML elements is not specific enough, you want to target items in certain areas of your layout.</p><br/>
+  	<ul>
+  		<li>A uniquely-styled sidebar list</li>
+  		<li>Styling footer links</li>
+  		<li>Different fonts in the aside</li>
+  	</ul>
+  </section>
+
+<!-- Selectors: ID-->
+        <section>
+          <h3>Selector: ID</h3>
+              <pre><code class = "html">
+              #social {
+                property: value;
+              }
+              </code></pre>
+                        <p>Selects the element with an id of "social".</p>
+                        
+              <pre><code class = "html">
+              &lt;div id="social">
+                &lt;img src="images/twitter.jpg" alt="twitter icon">
+              &lt;/div>
+              </code></pre>
+                       <p>The associated HTML.</p>
+            <p class="fragment" style="margin-top:30px;">Using IDs in CSS is not recommended - try to use classes instead!</p>
+  </section>
+        
+<!-- Selectors: Class-->
+        <section>
+          <h3>Selector: Class</h3>
+            <pre><code class = "html">
+            .warning {
+              color: red;
+            }
+            </code></pre>
+          <p>Selects <em>all</em> elements with a class of "warning".</p>
+
+            <pre><code class = "html">
+            &lt;p class="warning">Run away!&lt;/p>
+            &lt;h2 class="warning">Yikes!&lt;/h2>
+            </code></pre>
+                     <p>The associated HTML.</p>
+                    </section>
+
+<!-- ID vs Class example-->
+      <section>
+        <h3>IDs vs. Classes</h3>
+          <p><span class = "yellow">ID</span> -- Should only apply to one element on a webpage (like #top -- there is only one top of the page). Can be used to link to different parts of a single page. (Example: <a href="http://www.npr.org/">npr.org</a>).</p>
+          <div>
+            <pre style="width: 42%; float: left;"><code class = "html">
+      &lt;p id = "this_ID">
+          </code></pre>
+          <pre style="width: 42%; float: right;"><code class = "css">
+      #this_ID { color:red; }
+          </code></pre>
+        </div>
+      <div style="clear:both;">
+          <p><span class = "yellow">Class</span> -- Lots of elements can have the same class. I.E. There can be many warnings on one webpage.</p>
+      </div>
+       <div>
+            <pre style="width: 42%; float: left;"><code class = "html">
+    &lt;p class="this_class">
+    &lt;a class="this_class">
+          </code></pre>
+          <pre style="width: 42%; float: right;"><code class = "css">
+    .this_class { color:#333; }
+          </code></pre>
+        </div>
+      </section>  
+
+<!-- ID vs Class - analogy-->
+       <section>
+        <h3>IDs vs. Classes</h3>
+        <div class = "left-align">
+          <p class="yellow">Another way to think about it:</p>
+      </p>Like a department store, you just have one women's department, one men's department, one kids' department. These departments are like ID's.</p><br/>
+          <p>Inside each department are all kinds of products: sweaters, shirts, socks, in all colors and sizes. There are multiples of these, so these are like classes.</p>
+        </div>
+      </section> 
+
+<!-- Let's Develop It: Adding a class -->
+  <section>
+    <h3>Let's Develop It</h3>
+    <ul>
+    <li>Remember the <code>&lt;div&gt;</code> we created? Let's give it a class of "green."</li>
+    <li>Now we add a rule to <span class="green">styles.css</span> to define what "green" will do:
+      <pre>
+        <code class="css">
+          .green {
+            background-color: #D0E799;
+            padding: 10px;
+          }
+        </code>
+      </pre>
+    </li>
+  </ul>
+  </section>
+
+<section>
+	<h3>Multiple Classes</h3>
+	<ul>
+	<li>Feel free to create more classes on your own!</li> 
+	<li>You can even add multiple classes to an element, separated by spaces: </li>
+      <pre>
+        <code class="html">
+          &lt;p class="align-right red warning">
+        </code>
+      </pre>
+     </ul>
+</section>
+
+<!-- Span -->
+       <section>
+          <h3>Element: <code>&lt;span></code></h3>
+          <ul>
+          <li>Inline element. Each new span is rendered next to each other &amp; only wraps when it reaches the edge of the containing element.</li>
+          <li>Can be used to apply styles to text inline so as not to break the flow of content.</li>
+          <li>CSS classes style the span.</li>
+          </ul>
+        </section>     
+    
+        <section>
+          <h3>Span</h3>
+          <p>Span is used to apply a specific style inline</p>
+          
+                <pre><code class ="html">
+        &lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
+                </code></pre>
+
+                <pre><code class ="css">
+                .yellow{
+                  color:yellow;
+                }
+                </code></pre>
+
+                <p>Paragraph with <span class ="yellow">yellow</span> text.</p>
+        </section>
+<!-- Exercise-->
+         <section>
+          <h3>Let's Develop It</h3>
+         <p>Let's add some <code>&lt;span&gt;</code>s to our content to help highlight some text. </p>
+        </section>          
+                
+<!-- Static Positioning-->
+       <section>
+         <h3>Positioning: Static</h3>
+         <div class = "left-align">
+         <p>HTML elements are positioned static by default.</p>
+         <p>Static elements are positioned in the normal ﬂow of the page</p>
+         </div>
+         <div>
+         <img src="images/static_positioning.jpg"/>
+         </div>
+       </section>
+       
+       <section>
+         <h3>Static Positioning</h3>
+         <p>Inline elements flow from left to right, wrapping to next line when needed.</p>
+            <pre><code class = "html" style="max-height: 130px;">
+            &lt;img src="images/cat1.jpg"/>   
+            &lt;img src="images/cat2.jpg"/>   
+            &lt;img src="images/cat3.jpg"/> 
+            &lt;img src="images/cat4.jpg"/>
+            &lt;img src="images/cat5.jpg"/>
+            &lt;img src="images/cat6.jpg"/>
+            &lt;img src="images/cat7.jpg"/>
+
+            </code></pre>
+            <img src="images/cat1.jpg" width="150px"/>
+            <img src="images/cat2.jpg" width="150px"/>
+            <img src="images/cat3.jpg" width="150px"/> 
+            <img src="images/cat4.jpg" width="150px"/> 
+            <img src="images/cat5.jpg" width="150px"/>
+            <img src="images/cat6.jpg" width="150px"/>
+            <img src="images/cat7.jpg" width="150px"/>    
+        </section>
+       
+       <section>
+         <h3>Static Positioning</h3>
+         <p>In normal flow, block boxes flow from top to bottom, making a new line after every box.</p>
+          <pre><code class ="html">
+           &lt;p>Greetings&lt;/p>
+           &lt;p>Hello&lt;/p>
+           &lt;p>Hi there!&lt;/p>
+
+           &lt;p>Greetings&lt;/p>&lt;p>Hello&lt;/p>&lt;p>Hi there!&lt;/p>
+          </code></pre>
+                  <div class ="left-align">
+                    <p>Greetings</p>
+                    <p>Hello</p>
+                    <p>Hi there!</p>
+                  </div>
+      </section>
+       
+       <!-- Relative Positioning-->
+<!-- Not sure where I want this slide yet.      
+       <section>
+         <h3>Relative Positioning</h3>
+         <div class = "left-align">
+         <ul>
+         <li>Takes the element out of the normal flow, allowing it to be moved to the top, left, right or bottom. </li>
+         <li>Does not affect the elements surrounding it.</li>
+         <li>Makes an element a "positioning context" in which to position other elements relative to it.</li>
+         <li>Relative positioning and absolute positioning are used together.</li>
+         </ul>
+         </div>
+       </section>
+
+     -->
+
+<!-- Relative Positioning -->
+       <section>
+         <h3>Relative Positioning</h3>
+         <p>The "relative" value will still put the element in the normal flow, but then offset it according to top/left/right/bottom properties.</p>
+
+          <pre><code class = "html">
+            .I_am_totally_relative_yall{
+              position: relative; 
+              left: 80px; 
+              top: 20px;
+              height: 100px; 
+              background-color: yellow;
+            }
+          </code></pre>
+           <div style="border:2px solid black;">
+           <div style="position: relative; left: 80px; top: 20px;
+             height: 100px; background-color: yellow; color:black; text-align:left">
+             Hello, hi!
+           </div>
+           </div>
+       </section>
+
+
+       <!-- Absolute positioning-->
+       <!--<section >
+         <h3>Absolute Positioning</h3>
+         <div class = "left-align">
+         <ul>
+         <li>Positions element outside of the normal flow.</li>
+         <li>An absolutely positioned element is offset from its container block, positioned relative.</li>
+         <li>Its container block is the nearest parent element that is positioned absolute or relative.</li>
+         <li>If no such element is found, the container block is &lt;html>.</li>
+         <li>Other elements act as if it's not there.</li>
+         <li>Determined by its oﬀset values in the properties top, bottom, right and left.</li>
+         </ul>
+         </div>
+       </section>-->
+
+<!-- Absolute Positioning -->
+       <section  style="border: 1px solid black">
+         <h3>Absolute Positioning</h3>
+         <p>The "absolute" value will take the element out of the normal flow and position it in relation to the window (or the closest non-static element).</p>
+          <pre><code class = "html">
+            .floating_top_button{
+              position: absolute; 
+              top: -40px; 
+              right: 10px; 
+              background-color: yellow
+            }
+          </code></pre>
+          <pre><code class = "html">
+            .floating_bottom_button{
+              position: absolute; 
+              bottom: -40px; 
+              left:60px; 
+              background-color: green
+            }
+          </code></pre>
+                   <div>
+                   <div style="position: absolute; top: -40px; right: 10px; 
+                     background-color: yellow; color:black">
+                    Up here
+                   </div>
+                 <div style="position: absolute; bottom: -40px; left:60px; 
+                   background-color: green">
+                    Down here
+                   </div>
+                   </div>
+       </section>
+       <section>
+        <h3>Example: Absolute Positioning</h3>
+        <div class="left left-align" style="width: 45%;">
+        <br/>
+        <p>The social media icons in this example have been absolutely positioned.</p>
+        <br/><br/><br/>
+        <p>Their container is absolutely positioned 40px from the top of the web page.</p>
+        </div>
+        <div class="right" style="width: 45%;">
+        <img src="images/absolute_buttons.png" alt="example float" width="85%"/>
+          <pre><code class ="css">
+          position: absolute;
+          top: 40px;
+          </code></pre>
+        </div>
+       </section>
+
+<!-- Exercise -->
+       <section>
+        <h3>Let's Develop it!</h3>
+        <ul>
+          <li>We will make a box that is locked to the top of our page</li>
+          <li>In your HTML file, create a <code>&lt;div></code> with the class "social"</li>
+          <li>In your CSS file, give it absolute positioning</li>   
+        </ul>   
+
+          <pre><code class ="html">
+          &lt;div class="social">
+          &lt;/div>
+          </code></pre> 	
+
+                  <pre><code class ="css">
+          .social{
+            background-color:#fff;
+            position:absolute;
+            padding:10px;
+            top:10px;
+            left:0px;
+          }
+          </code></pre>
+       </section>
+
+<!-- Exercise -->
+       <section>
+        <h3>Let's Develop it!</h3>
+        <p>Inside of our absolute positioned <code>&lt;div&gt;</code>, let's add some fun social media icons.</p><br />
+        <pre><code class ="html">
+&lt;div class="social">
+  &lt;img src="images/icons/facebook.png" alt="Facebook">
+  &lt;img src="images/icons/twitter.png" alt="Twitter">
+  &lt;img src="images/icons/instagram.png" alt="Instagram">
+&lt;/div>
+        </code></pre> 	
+       </section>
+
+<!-- Fixed positioning-->
+       <section >
+         <h3>Fixed Positioning</h3>
+         <div class = "left-align">
+         <ul>
+         <li>A fixed positioned element is not relative to another HTML element, it is relative to the browser window.</li>
+         <li>A fixed element will not move when you scroll through your browser.
+        
+
+         <pre><code class ="css">
+          position: fixed;
+          top: 40px;
+        </code></pre></li>
+        <li class="fragment">Try making your social div fixed!</li>
+         </div>
+       </section>
+ 
+ <!-- Float-->
+       <section>
+         <h3>Float</h3>
+         <div class = "left-align">
+            <ul>
+            <li>"Floating" an element takes it in the normal flow, as far to the left or right of its containing element as possible.</li>
+            <li>Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
+            </ul>
+         </div>
+       </section>
+       
+       <section>
+       <h3>Float: Example</h3>
+       <p>Below an aside is floated to the left, allowing text to wrap around it on the right</p>
+       <img src="images/example-floatbq.png" alt="example float" />
+       </section>
+       <section>
+         <h3>Float</h3>
+         <div class = "left-align">
+            <li>Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
+            <li>You can specify</li>
+            <ul><li> a) whether an element is floated or not
+            	<li>b) which side it ﬂoats on.</li>
+            </ul>
+            </ul>
+         </div>
+       </section>
+
+       <section>
+         <h3>Float</h3>
+          <pre><code class ="css">
+            .I_am_a_floating_box{
+              float:left;
+              width:200px;
+              background:yellow;
+            }
+          </code></pre>
+        <div style ="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px;">
+          <small>Hi, I'm a yellow box with black text.<br/>
+          I like to hang out on the left side.</small><br/>
+        </div>
+        <div class = "left-align">Not floating element</div>
+        <div class = "left-align">Not floating element</div>
+         <div class = "left-align">Not floating element with wrapping Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+       </section>
+
+<!-- Exercise -->
+       <section>
+        <h3>Let's Develop it!</h3>
+        <p>Float your sidebar to the right.</p>
+
+          <pre><code class ="css">
+           aside{
+              float: right;
+              width: 30%;
+            }
+          </code></pre>
+       </section>
+       
+       <section>
+       <h3>Using floats to place elements side by side</h3> 
+       <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
+       <img src="images/example-float-column.png" />
+       </section>
+
+       <section>
+        <h3>Try it out!</h3>
+        <p>Float your main to the left.</p>
+        <pre><code class ="css">
+           main{
+              float: left;
+              width: 60%;
+            }
+          </code></pre>
+       </section>
+
+<!-- Clear-->
+       <section>
+         <h3>Clear</h3>
+         <ul>
+         <li>Clearing tells the element on which side (right, left, both) other elements <strong>cannot</strong> appear. </li>
+         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <code>clear: left;</code> to the paragraph.</li>
+         <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
+         </ul>
+          <pre><code class = "css">
+            clear: right;
+            clear: left;
+            clear: both;
+          </code></pre>
+        </section>
+
+      <section>
+         <h3>Clear</h3>
+       <img src="images/example-float-with_clear.jpg" width="650"/>
+       </section> 
+       
+       <section>
+          <h3>Clear</h3>
+           <pre><code class ="html">
+             .little_yellow_box{
+               float:left;
+               width:50px;
+               background:yellow;
+             }
+             .lonely_line{
+               clear:left
+             }
+           </code></pre>
+         <div style ="float:left;width:50px;background:yellow; color:black; ">
+           hi<br/>
+           hi<br/>
+           hi<br/>
+         </div>
+         <div class = "left-align">Not floating element</div>
+         <div class = "left-align">Not floating element</div>
+         <div class = "left-align" style="clear: left;">None floating element with a class of <strong>.clear-left</strong></div>
+        </section>
+        
+<!-- Exercise-->
+       <section>
+         <h3>Let's Develop It</h3>
+         <p>Let's clear the <code>&lt;footer></code>.</p>
+
+         <pre class="fragment"><code class = "html" style="min-height: 100px; max-height: 475px;">
+         	&lt;footer>
+         	  &lt;p> My footer content! &lt;/p>
+         	&lt;/footer>
+         </code>
+     	 </pre>
+         <pre class="fragment">
+         	<code class = "css" style="min-height: 100px; max-height: 475px;">
+         	footer {
+         		clear: both;
+         	}
+         	</code>
+     	</pre>
+       </section>
+
+<!-- Z-index -->
+       <section>
+       <h3>Z-index</h3>
+         <p class="left-align" style="font-size: 75%;">When you use positioning to move elements out of the normal flow of content, elements can overlap. You can change the order of overlapping with z-index.</p>
+         <p class="left-align" style="font-size: 75%;">The element with highest z-index goes on top.</p>
+        <pre><code class ="html">
+          .bottom{
+            position: absolute; 
+            bottom: 10px; 
+            left:60px; 
+            background-color: yellow;
+          }
+        </code></pre>
+        <pre><code class ="html">
+          .top{
+            position: absolute; 
+            bottom: 15px; 
+            left:60px; 
+            background-color: green; 
+            z-index: 2;
+          }
+        </code></pre>
+                <div style="position: absolute; bottom: -20px; left:60px; 
+                  background-color: yellow; color:black"> Bottom </div>
+                <div style="position: absolute; bottom: -15px; left:60px; 
+                  background-color: green; z-index: 2; "> Top </div>
+               </section>
+<section>
+       <h3>Z-index: another way to look at it</h3>
+       <p>Think of z-index stacking as layering.</p>
+       <img src="images/z-index.gif"/>
+   </section>
+       
+<!-- Pseudo classes -->
+        <section>
+          <h3>Pseudo-classes, more CSS for links</h3>
+          <div class ="left left-align" style="width:50%">
+          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
+          <br/>
+          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
+          </div>
+          Syntax: 
+            <pre><code class ="html">
+            selector:pseudo-class
+            {
+              property:value; 
+            }
+            </code></pre>
+                      Example:
+            <pre><code class ="html">
+            a:link
+            {
+              text-decoration: none;
+            }
+            </code></pre>
+                    </section>
+        
+      
+        <section>
+          <h3>Pseudo-classes, more CSS for links</h3>
+          <pre><code class ="html">
+            a:link  {color:#FF0000;} /* unvisited link */
+            a:visited {color:#00FF00;} /* visited link */
+            a:focus {color: #FF00FF;} /* link currently in focus */
+            a:hover {color:#FF00FF;} /* mouse over link */
+            a:active  {color:#0000FF;} /* selected link */
+          </code></pre>
+          <small>* <code>a:hover</code> MUST come after <code>a:link</code> and <code>a:visited</code> in the CSS definition in order to be effective!</small>
+          <small>* <code>a:active</code> MUST come after <code>a:hover</code> in the CSS definition in order to be effective!</small>
+        </section>
+       
+<!-- Exercise -->
+        <section>
+          <h3>Let's Develop it!</h3>
+          <p>Let's style our links list using pseudo classes.</p>
+
+          <pre><code class ="html">
+            a:link  {color:#f05b62;}
+            a:visited {color:#ffa4a8;}
+            a:focus {color:#000;}
+            a:hover {color:#000;}
+            a:active  {color:yellow;}
+          </code></pre>
+        </section>
+        
+
+<!-- What's wrong with my code-->
+       <section>
+        <h3>What's wrong with my code?</h3>
+        <p>Why do you think this code isn't working?</p>
+        <div class="fragment">
+        <p class="red left-align">WRONG:</p>
+        <pre><code>
+            a hover {color:FF00FF;}</code></pre>
+        </div>
+        <div class="fragment">
+        <p class="green left-align">CORRECT:</p>
+        <pre><code>
+          a:hover {color:#FF00FF;}</code></pre>
+          <p>Missing a colon between a and hover.</p>
+          <p>The hex code needs a # before the six-digit number.</p>
+        </div>
+       </section>
+       <section>
+       <h3>What should I use?</h3>
+       <p class="red left-align">I want to create a two-column layout.</p>
+        <div class="fragment">
+        <ol>
+          <li>Fixed positioning</li>
+          <li>Absolute positioning</li>
+          <li>Float</li>
+          <li>clear:right;</li>
+        </ol>
+        </div>
+        <div class="fragment">
+        <p class="green left-align">ANSWER:</p>
+        <p>Float! Float one column to the left, the other to the right.</p>
+<p><small>Don't forget the width.</small></p>
+        </div>
+       </section>
+
+<!-- Hosting & Domain -->
+      <section>
+       <h3>Wait... How does a website work?</h3>
+       <ul>
+       <li><p>The HTML and CSS need to be online, not on your computer.</p></li>
+       <li><p>If you buy a web hosting plan, you can upload your files to a webserver.</p></li>
+       <li><p>A webserver is a computer that is accessible online</p></li>
+       <li><p>The webserver stores your files</p></li>
+     </ul>
+        <img src="images/server.jpg" alt="web server" />
+      </section>
+      <section>
+       <h3>How does someone find my site?</h3>
+
+        <ul>
+       <li><p>A domain name is an address you buy</p></li>
+       <li><p>The address points anywhere you want, in this case, the files on the server.</p></li>
+     </ul>
+             <img src="images/address.jpeg" alt="domain resigration" />
+      </section>
+      <section>
+       <h3>Server + Domain + You</h3>
+
+             <img src="images/site_server.jpg" alt="server domain and you" />
+    </section>
+
+<!-- What's Next? -->
+  <section>
+    <h3>What's Next?</h3>
+    <h4>Practice, practice, practice!</h4>
+    <h6>(Use it or lose it)</h6>
+    <ul>
+    	<li><a href="https://www.codecademy.com/en/courses/html-css-prj?utm_campaign=2015_07_28_htmlcssprojects&utm_source=blog" target="_blank">HTML &amp; CSS Projects on Codecademy</a></li>
+    	<li>Reverse engineer some sites you like. (More on this at <a href="http://www.quora.com/Where-can-I-practice-my-HTML-CSS-and-JavaScript" target="_blank">Where can I practice HTML, CSS, and JavaScript?</a> on Quora)</li>
+    	<li>Teach someone else what you learned in class.</li>
+    	<li>Make a website for yourself or someone else!</li>
+    </ul>
+  </section>
+  <section>
+  	<h3>What's Next?</h3>
+  	<h4>Keep learning!</h4>
+    <ul>
+      <li>Check out the resources on <a href="http://gdidetroit.com/intro/" target="_blank">our Intro page</a>.</li>
+      <li>Think about learning the following (yes, we offer workshops on all of these!):<br/><br/>
+        <ul>
+        <li>Responsive Design</li>
+        <li>HTML5 + CSS3</li>
+        <li>JavaScript</li>
+        <li>Sass</li>
+        <li>Content management systems like WordPress</li>
+        <li>PHP/MySQL</li>
+        </ul>
+    </ul>
+  </section>
+
+<!-- Upcoming Events -->
+<section>
+  <h3>Upcoming GDI Events!</h3>
+  <ul>
+    
+    <li>
+      <span class="green">08/18 &amp; 08/20</span>: Intro to JavaScript
+    </li>
+    <li>
+      <span class="green">09/10</span>: Developer Panel</li>
+      
+      <li>
+      <span class="green">09/12</span>: Basic HTML</li>
+
+      <li>
+      <span class="green">09/19</span>: Getting Sassy with CSS</li>
+
+      <li>
+      <span class="green">09/19</span>: DiscoTech</li>
+
+       <li>
+      <span class="green">09/20</span>: Bootstrap Resume</li>
+
+      <li>
+      <span class="green">09/26</span>: Code &amp; Coffee</li>
+
+
+  </ul><br/><br/>
+  <p>Make sure to like us on <a href="https://www.facebook.com/GirlDevelopItDetroit">Facebook</a>, follow us on <a href="http://twitter.com/gdidet">Twitter</a>, and watch our <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">Meetup group</a> for more great events!</p>
+
+  <!-- <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">
+    <img src = "images/gdi_logo_badge.png" style="width: 150px; border: none; box-shadow: none;">
+  </a> -->
+</section>
+
+      <section>
+          <h2>Questions?</h2>
+          <p>We're here to help!</p>
+          <img src="images/questions_cat.jpg" alt="Confused? Let us help!" />
+            <p>
+            <a href="mailto:leeann@girldevelopit.com">leeann@girldevelopit.com</a> Twitter: @leeanndrees</p>
+            <p>
+            <a href="mailto:detroit@girldevelopit.com">detroit@girldevelopit.com</a> Twitter: @gdiDet</p>
+        </section>
+      </div>
+      
+      <footer>
+        <div class="copyright">
+          HTML/CSS &mdash; Girl Develop It Detroit &mdash;
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

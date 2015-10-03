@@ -1,0 +1,22 @@
+body {
+	background-color: #c4da9a;
+}
+
+h1 {
+	background-color: #00A9B4;
+	color: #ffffff;
+	font-family: Georgia,Times,"Times New Roman",serif;
+
+}
+
+a {
+	color: #8B0036;
+}
+
+p {
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+}
+
+ol li {
+	font: 25px sans-serif;
+}
